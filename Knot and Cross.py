@@ -29,6 +29,7 @@
 #    |---------------------------------------|
 #      1    2    3    4    5    6    7    8
 
+import random
 
 def Start():
     print("this is the key")
@@ -139,7 +140,7 @@ def Computer_Turn(positions, player_key, computer_key) -> dict:
     if len(player_positions) < 1:
         i = 0
         while not Check_Valid_Position(positions, i):
-            i += 1
+            i = random.randint(1,9)
         if Check_Valid_Position(positions, i):
             positions[i] = computer_key
 
