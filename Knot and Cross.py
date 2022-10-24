@@ -32,6 +32,7 @@
 #    |---------------------------------------|
 #      1    2    3    4    5    6    7    8
 
+import random
 
 def Start():
     # display which number associates to which position on the board
@@ -154,7 +155,7 @@ def Computer_Turn(positions, player_key, computer_key) -> dict:  # computer turn
     if len(player_positions) < 1:  # if player has not played yet, use a random position
         i = 0
         while not Check_Valid_Position(positions, i):
-            i += 1
+            i = random.randint(1,9)
         if Check_Valid_Position(positions, i):
             positions[i] = computer_key
 
