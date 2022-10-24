@@ -8,4 +8,4 @@ Uses weightings for each position to help the computer to decide where to add a 
 
 Not actually that hard to beat, depending on where the program initially decide to place cross or knot
 
-The code has no comments because I am not bothered to add them.
+Now it has comments
